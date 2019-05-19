@@ -1,7 +1,8 @@
 @import 'partials/variables';
 
 header {
-    background: linear-gradient(to right, $lightgrey 50%, $darkgrey 50%);
+    // background: linear-gradient(to right, $lightgrey 50%, $darkgrey 50%);
+    background: linear-gradient(to right, $yellow 50%, $red 50%);
     height:100vh;
     position: relative;
     .balls {
@@ -125,6 +126,9 @@ nav {
         align-items: center;
         font-weight: bolder;
         font-size: 30px;
+        .d,.s {
+            color: $red;
+        }
     }
     .nav-right {
         display: flex;

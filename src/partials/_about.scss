@@ -1,8 +1,9 @@
 .about-wrapper {
     margin:0 auto;
     padding:50px;
+    background-color: $navyblue;
     p {
-        color:$navyblue;
+        color:$white;
         font-family: $montserrat;
         text-align: center;
         line-height: 26px;
@@ -10,6 +11,9 @@
         margin:0 auto;
         font-weight: 600;
         max-width: 900px;
+    }
+    span {
+        color: $yellow;
     }
     .about-skills {
         display:flex;
@@ -23,6 +27,7 @@
             border-radius: 100%;
             height: 100%;
             transition:1s;
+            margin:0 40px;
             p {
                 width: 60%;
                 margin: 0 auto;
@@ -36,18 +41,30 @@
                 align-items: center;
                 margin-bottom:10px;
                 border-radius: 100%;
-                &.one {
-                    background-color:#ff7058;;
-                }
-                &.two {
-                    background-color: #3a92b7;
-                }
+                position: relative;
+                z-index: 1;
                 &.three {
-                    background-color:#8e8e8e;
                     .container {
                         width:5em;
                     }
                 }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    bottom: 0;
+                    left: -0.25em;
+                    right: -0.25em;
+                    // background-color: #fc2f70;
+                    transform-origin: bottom center;
+                    transform: scaleY(0.1);
+                    transition: all 0.5s ease-in-out;
+                  }
+                  &:hover::before {
+                    transform: scaleY(1);
+                    background-color:lightseagreen;
+                  }
             }
             .skill-image, .container {
                 padding: 20px;
@@ -59,13 +76,13 @@
             }
             .container {
                 span {
-                    background-color:$navyblue;
+                    background-color:$white;
                     width: 0.3em;
                     height: 2em;
                 }
             }
             h3 {
-                color: $navyblue;
+                color: $white;
                 font-family: $montserrat;
                 font-size: 16px;
                 font-weight: 600;
