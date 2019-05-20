@@ -16,9 +16,17 @@ class Services extends React.Component {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
                 </div>
                 <div className="timeline-dots">
-                    {/* <img src={rocket} alt="" className="timeline-rocket" /> */}
                     
                     <img src={line} alt="" className="timeline-line" />
+                    <div className="timeline-copy">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+                    </div>
+                    <div className="timeline-copy">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+                    </div>
+                    <div className="timeline-copy">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+                    </div>
                     <div className="circle one">
                         <img src={dillon} alt="" className="imgLarge" />
                         <img src={microphone} alt="" className="icon" />

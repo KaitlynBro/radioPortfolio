@@ -20,8 +20,30 @@
     }
     .timeline-dots {
         position: relative;
+        margin-top: -50px;
         .timeline-line {
             width: 100%;
+        }
+        .timeline-copy {
+            position: absolute;
+            color: $white;
+            font-size: 16px;
+            line-height: 26px;
+            &:nth-child(2) {
+                left: 15%;
+                top: 20%;
+                max-width: 460px;
+            }
+            &:nth-child(3) {
+                right: 15%;
+                top: 45%;
+                max-width: 460px;
+            }
+            &:nth-child(4) {
+                left: 15%;
+                top: 75%;
+                max-width: 460px;
+            }
         }
         .circle { 
             border: 1em dotted red;
